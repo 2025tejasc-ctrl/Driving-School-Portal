@@ -49,6 +49,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   animation: pageFade 0.5s ease;
+  
 }
 a {
   text-decoration: none;
@@ -1408,7 +1409,7 @@ select:focus {
   .footer-brand h2 {
     font-size: 1.6rem;
   }
-}/* POPUP */
+} /* POPUP */
 .booking-popup {
   position: fixed;
   top: 22px;
