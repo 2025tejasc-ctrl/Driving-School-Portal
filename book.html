@@ -1,0 +1,210 @@
+<title>DriveTest Pro – Home</title>
+<title>DriveTest Pro – Book Lesson</title>
+<title>DriveTest Pro – My Progress</title>
+<title>DriveTest Pro – About Us</title>
+<title>DriveTest Pro – Contact Us</title>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveTest Pro – Book Lesson</title>
+    <link rel="stylesheet" href="styles.css?v=5">
+</head>
+
+<body>
+
+
+    <div class="preloader" id="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">DriveTest Pro</div>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
+
+    <div class="page">
+        <div class="utility-bar">
+            <span>📍 Dombivli · Thane · Kalyan</span>
+            <span>🕒 Mon–Sat: 7:00 AM – 8:00 PM</span>
+            <span>🚗 Manual & Automatic Available</span>
+            <span>📞 +91 8779830328</span>
+        </div>
+
+        <!-- NAVBAR -->
+        <div class="topbar-wrap">
+            <header class="topbar">
+                <a href="index.html" class="logo-wrap">
+                    <img src="logo.png" alt="DriveTest Pro logo" class="logo-img">
+                    <div>
+                        <div class="logo-text">DriveTest Pro</div>
+                        <div class="logo-sub">Driving School Portal</div>
+                    </div>
+                </a>
+
+                <nav class="nav-links" id="primaryNav">
+                    <a href="index.html">Home</a>
+                    <a href="book.html" class="active">Book Lesson</a>
+                    <a href="progress.html">My Progress</a>
+                    <a href="instructors.html">Instructors</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html" class="nav-cta">Contact</a>
+                </nav>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
+        </div>
+
+        <main>
+            <section class="page-hero reveal">
+                <p class="eyebrow">Booking</p>
+                <h1>Book a driving lesson</h1>
+                <p>Choose your slot, vehicle type, and package in a few simple steps.</p>
+            </section>
+
+            <section class="reveal">
+                <article class="glass-card booking-card">
+                    <div class="section-header left">
+                        <div>
+                            <h2>Lesson booking form</h2>
+                            <p>We’ll match you with an available instructor and save your booking instantly.</p>
+                        </div>
+                    </div>
+
+                    <form id="bookingForm">
+                        <div class="form-grid">
+                            <div>
+                                <label for="date">Lesson date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+
+                            <div class="form-row-inline">
+                                <div>
+                                    <label for="time">Time slot</label>
+                                    <select id="time" name="time" required>
+                                        <option value="">Select time</option>
+                                        <option>07:00 – 08:00</option>
+                                        <option>09:00 – 10:00</option>
+                                        <option>11:00 – 12:00</option>
+                                        <option>16:00 – 17:00</option>
+                                        <option>18:00 – 19:00</option>
+                                    </select>
+                                </div>
+                                <div class="slot-panel">
+  <div class="slot-panel-top">
+    <h4>Available Slots</h4>
+    <p id="slotDayLabel">Select a date to view slot availability</p>
+  </div>
+
+  <div class="slot-grid" id="slotGrid">
+    <button type="button" class="slot-chip available" data-slot="07:00 – 08:00">
+      07:00 – 08:00
+      <span>Available</span>
+    </button>
+
+    <button type="button" class="slot-chip available" data-slot="09:00 – 10:00">
+      09:00 – 10:00
+      <span>Available</span>
+    </button>
+
+    <button type="button" class="slot-chip fast" data-slot="11:00 – 12:00">
+      11:00 – 12:00
+      <span>Filling Fast</span>
+    </button>
+
+    <button type="button" class="slot-chip full" data-slot="16:00 – 17:00" disabled>
+      16:00 – 17:00
+      <span>Full</span>
+    </button>
+
+    <button type="button" class="slot-chip available" data-slot="18:00 – 19:00">
+      18:00 – 19:00
+      <span>Available</span>
+    </button>
+  </div>
+</div>
+
+                                <div>
+                                    <label for="vehicle">Vehicle type</label>
+                                    <select id="vehicle" name="vehicle" required>
+                                        <option value="">Select type</option>
+                                        <option>Manual</option>
+                                        <option>Automatic</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-group">
+                            <label>Choose package</label>
+
+                            <div class="package-options">
+                                <label class="package-option" data-plan="single">
+                                    <div class="pkg-main">
+                                        <input type="radio" name="package" value="single" required>
+                                        <span class="pkg-name">Single Lesson</span>
+                                        <span class="pkg-price">₹1,200</span>
+                                    </div>
+                                    <span class="pkg-save">0% savings</span>
+                                </label>
+
+                                <label class="package-option" data-plan="five">
+                                    <div class="pkg-main">
+                                        <input type="radio" name="package" value="five">
+                                        <span class="pkg-name">5-Lesson Pack</span>
+                                        <span class="pkg-price">₹5,400</span>
+                                    </div>
+                                    <span class="pkg-save">10% savings</span>
+                                </label>
+
+                                <label class="package-option highlight-option" data-plan="ten">
+                                    <div class="pkg-main">
+                                        <input type="radio" name="package" value="ten">
+                                        <span class="pkg-name">10-Lesson Bundle</span>
+                                        <span class="pkg-price">₹9,800</span>
+                                    </div>
+                                    <span class="pkg-save">18% savings · Best value</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="booking-actions">
+                            <button type="submit" class="btn-primary">Confirm Booking</button>
+                            <button type="button" class="btn-ghost" onclick="window.location.href='pricing.html'">
+                                View Pricing Details
+                            </button>
+                        </div>
+                    </form>
+                </article>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-inner">
+                <span>© 2026 DriveTest Pro · All rights reserved. @TEJAS CHAVAN 1907</span>
+                <span>
+                    <a href="about.html">About</a> ·
+                    <a href="why-us.html">Why Us</a> ·
+                    <a href="contact.html">Contact</a> ·
+                    <a href="faq.html">FAQ</a>
+                </span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="app.js?v=6"></script>
+</body>
+
+</html>

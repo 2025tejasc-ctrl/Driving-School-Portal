@@ -1,0 +1,163 @@
+<title>DriveTest Pro – Home</title>
+<title>DriveTest Pro – Book Lesson</title>
+<title>DriveTest Pro – My Progress</title>
+<title>DriveTest Pro – About Us</title>
+<title>DriveTest Pro – Contact Us</title>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriveTest Pro – Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">DriveTest Pro</div>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
+
+    <div class="page">
+        <div class="utility-bar">
+            <span>📍 Dombivli · Thane · Kalyan</span>
+            <span>🕒 Mon–Sat: 7:00 AM – 8:00 PM</span>
+            <span>🚗 Manual & Automatic Available</span>
+            <span>📞 +91 8779830328</span>
+        </div>
+        <div class="topbar-wrap">
+            <header class="topbar">
+                <a href="index.html" class="logo-wrap">
+                    <svg class="logo-svg" viewBox="0 0 64 64" aria-hidden="true">
+                        <circle cx="32" cy="32" r="22" class="logo-ring"></circle>
+                        <path class="logo-car" d="M20 34 L24 26 L40 24 L44 30 L44 36 L20 36 Z" />
+                    </svg>
+                    <div>
+                        <div class="logo-text">DriveTest Pro</div>
+                        <div class="logo-sub">Driving School Portal</div>
+                    </div>
+                </a>
+
+                <nav class="nav-links" id="primaryNav">
+                    <a href="index.html">Home</a>
+                    <a href="book.html">Book Lesson</a>
+                    <a href="progress.html">My Progress</a>
+                    <a href="instructors.html">Instructors</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html" class="active nav-cta">Contact</a>
+                </nav>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </header>
+        </div>
+
+        <main>
+            <section class="page-hero reveal">
+                <p class="eyebrow">Contact Us</p>
+                <h1>We’re here to help you get started.</h1>
+                <p>
+                    Have questions about lessons, pricing, schedules, or instructors? Send us a message.
+                </p>
+            </section>
+
+            <section class="reveal">
+                <div class="contact-layout">
+                    <article class="glass-card booking-card">
+                        <div class="section-header left">
+                            <div>
+                                <h2>Send us a message</h2>
+                                <p>We’ll get back to you as soon as possible.</p>
+                            </div>
+                        </div>
+
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-grid">
+                                <div class="form-row-inline">
+                                    <div>
+                                        <label for="name">Full Name</label>
+                                        <input type="text" id="name" placeholder="Enter your name" />
+                                    </div>
+                                    <div>
+                                        <label for="email">Email Address</label>
+                                        <input type="email" id="email" placeholder="Enter your email" />
+                                    </div>
+                                </div>
+
+                                <div class="form-row-inline">
+                                    <div>
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" placeholder="Enter your phone number" />
+                                    </div>
+                                    <div>
+                                        <label for="topic">Topic</label>
+                                        <select id="topic">
+                                            <option value="">Select topic</option>
+                                            <option>Lesson Booking</option>
+                                            <option>Pricing</option>
+                                            <option>Instructor Query</option>
+                                            <option>Technical Support</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="message">Message</label>
+                                    <textarea id="message" rows="6" placeholder="Write your message here..."></textarea>
+                                </div>
+
+                                <div class="booking-actions">
+                                    <button type="submit" class="btn-primary">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </article>
+
+                    <aside class="contact-side">
+                        <article class="glass-card contact-card">
+                            <h3>Contact Details</h3>
+                            <p><strong>Email:</strong> support@drivetestpro.com</p>
+                            <p><strong>Phone:</strong> +91 8779830328</p>
+                            <p><strong>Location:</strong> Dombivli, Maharashtra, India</p>
+                        </article>
+
+                        <article class="glass-card contact-card">
+                            <h3>Office Hours</h3>
+                            <p>Monday – Friday: 8:00 AM – 8:00 PM</p>
+                            <p>Saturday: 9:00 AM – 6:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </article>
+
+                        <article class="glass-card contact-card">
+                            <h3>Quick Help</h3>
+                            <p>Need urgent support? Call our team or book a lesson directly from the website.</p>
+                        </article>
+                    </aside>
+                </div>
+            </section>
+        </main>
+
+        <div class="footer-inner">
+            <span>© 2026 DriveTest Pro · All rights reserved. @TEJAS CHAVAN 1907</span>
+            <span>
+                <a href="about.html">About</a> ·
+                <a href="why-us.html">Why Us</a> ·
+                <a href="contact.html">Contact</a> ·
+                <a href="faq.html">FAQ</a>
+            </span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

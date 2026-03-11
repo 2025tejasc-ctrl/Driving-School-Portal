@@ -1,0 +1,172 @@
+<title>DriveTest Pro – Home</title>
+<title>DriveTest Pro – Book Lesson</title>
+<title>DriveTest Pro – My Progress</title>
+<title>DriveTest Pro – About Us</title>
+<title>DriveTest Pro – Contact Us</title>
+<title>DriveTest Pro – FAQ</title>
+<title>DriveTest Pro – Instructors</title>
+<title>DriveTest Pro – Pricing</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveTest Pro – My Progress</title>
+    <link rel="stylesheet" href="styles.css?v=5">
+</head>
+
+<body>
+
+    <div class="preloader" id="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">DriveTest Pro</div>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
+
+    <div class="page">
+        <div class="utility-bar">
+            <span>📍 Dombivli · Thane · Kalyan</span>
+            <span>🕒 Mon–Sat: 7:00 AM – 8:00 PM</span>
+            <span>🚗 Manual & Automatic Available</span>
+            <span>📞 +91 8779830328</span>
+        </div>
+        <!-- NAVBAR -->
+        <div class="topbar-wrap">
+            <header class="topbar">
+                <a href="index.html" class="logo-wrap">
+                    <img src="logo.png" alt="DriveTest Pro logo" class="logo-img">
+                    <div>
+                        <div class="logo-text">DriveTest Pro</div>
+                        <div class="logo-sub">Driving School Portal</div>
+                    </div>
+                </a>
+
+                <nav class="nav-links" id="primaryNav">
+                    <a href="index.html">Home</a>
+                    <a href="book.html">Book Lesson</a>
+                    <a href="progress.html" class="active">My Progress</a>
+                    <a href="instructors.html">Instructors</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html" class="nav-cta">Contact</a>
+                </nav>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
+        </div>
+
+        <main>
+            <section class="page-hero reveal">
+                <p class="eyebrow">Your Dashboard</p>
+                <h1>Track your learning progress</h1>
+                <p>See booked lessons, completed sessions, remaining practice, and overall readiness.</p>
+            </section>
+
+            <section class="reveal">
+                <div class="progress-grid">
+                    <article class="glass-card metric-card">
+                        <h3>Total Lessons Booked</h3>
+                        <p class="metric-number" id="totalLessons">0</p>
+                    </article>
+
+                    <article class="glass-card metric-card">
+                        <h3>Completed Lessons</h3>
+                        <p class="metric-number" id="completedLessons">0</p>
+                    </article>
+
+                    <article class="glass-card metric-card">
+                        <h3>Remaining Lessons</h3>
+                        <p class="metric-number" id="remainingLessons">0</p>
+                    </article>
+                </div>
+
+                <div class="progress-actions reveal">
+                    <button class="btn-primary" id="completeLessonBtn" type="button">
+                        Mark 1 Lesson Complete
+                    </button>
+
+                    <button class="btn-ghost" id="resetProgressBtn" type="button">
+                        Reset Progress
+                    </button>
+                </div>
+            </section>
+
+            <section class="reveal">
+                <article class="glass-card progress-card">
+                    <div class="section-header left">
+                        <div>
+                            <p class="eyebrow">Readiness Level</p>
+                            <h2>Licence readiness</h2>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+
+                    <p class="progress-text">
+                        <span id="readinessPercent">0%</span> readiness based on completed lessons
+                    </p>
+                </article>
+            </section>
+
+            <section class="reveal">
+                <article class="glass-card latest-booking-card">
+                    <div class="section-header left">
+                        <div>
+                            <p class="eyebrow">Latest Booking</p>
+                            <h2>Your most recent lesson</h2>
+                        </div>
+                    </div>
+
+                    <div class="latest-booking" id="latestBooking">
+                        <p>No booking found yet.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="reveal">
+                <article class="glass-card history-card">
+                    <div class="section-header left">
+                        <div>
+                            <p class="eyebrow">Booking History</p>
+                            <h2>Saved lesson history</h2>
+                        </div>
+                    </div>
+
+                    <div class="history-list" id="bookingHistoryList">
+                        <p>No booking history yet.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-inner">
+                <span>© 2026 DriveTest Pro · All rights reserved. @TEJAS CHAVAN 1907</span>
+                <span>
+                    <a href="about.html">About</a> ·
+                    <a href="why-us.html">Why Us</a> ·
+                    <a href="contact.html">Contact</a> ·
+                    <a href="faq.html">FAQ</a>
+                </span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
